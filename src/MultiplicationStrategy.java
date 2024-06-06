@@ -1,6 +1,6 @@
 
 
-public class MultyplicationStrategy implements Strategy {
+public class MultiplicationStrategy implements Strategy {
     private ComplexNum a;
     private ComplexNum b;
 

@@ -1,17 +1,24 @@
-public class ComplexNumber {
-    double RealPart;
-    double ImaginaryPart;
 
-    public ComplexNumber(double realPart, double imaginaryPart) {
-        RealPart = realPart;
-        ImaginaryPart = imaginaryPart;
+
+public class ComplexNum {
+    private double realPart;
+    private double imaginaryPart;
+
+    public ComplexNum(double realPart, double imaginaryPart) {
+        this.realPart = realPart;
+        this.imaginaryPart = imaginaryPart;
     }
 
     public double getRealPart() {
-        return RealPart;
+        return realPart;
     }
 
     public double getImaginaryPart() {
-        return ImaginaryPart;
+        return imaginaryPart;
+    }
+
+    @Override
+    public String toString() {
+        return realPart + " + " + "i * " + imaginaryPart;
     }
 }
